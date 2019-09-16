@@ -1,0 +1,185 @@
+/*!
+ * =====================================================
+ * app v3.7.0 (http://dev.dcloud.net.cn/mui)
+ * =====================================================
+ */
+
+body {
+    background: white;
+    overflow: hidden;
+}
+
+header>a>span {
+    font-size: 16px;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.table {
+    display: table;
+    width: 100%;
+}
+
+.thead {
+    display: table-header-group;
+}
+
+.tbody {
+    display: table-row-group;
+}
+
+.th,
+.td {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.th {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.td {
+    font-size: 1rem;
+}
+
+.tr {
+    display: table-row;
+}
+
+.th-10-3,
+.td-10-3 {
+    width: 30%;
+}
+
+.th-5-4,
+.td-5-4 {
+    width: 80%;
+}
+
+.th-5-1,
+.td-5-1 {
+    width: 20%;
+}
+
+.th-10-1,
+.td-10-1 {
+    width: 10%;
+}
+
+.th-10-4,
+.td-10-4 {
+    width: 40%;
+}
+
+.tbody .tr:nth-of-type(odd) {
+    background: lightcyan;
+}
+
+.tbody .tr:nth-of-type(even) {}
+
+.mui-bar-tab .boze {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #929292
+}
+
+.mui-bar-tab .boze.mui-active {
+    color: #007aff
+}
+
+.mui-bar-tab .boze .mui-icon {
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.mui-bar-tab .boze .mui-icon~.mui-tab-label {
+    font-size: 11px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.mui-bar-tab .boze .mui-icon:active {
+    background: 0 0
+}
+
+.total_zhebiceng {
+    width: 100%;
+    position: fixed;
+    z-index: 1002;
+    top: 46px;
+    bottom: 0px;
+    opacity: 0.8;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+.mask_inner_span {
+    font-style: oblique;
+}
+
+.total_zhebiceng_inner_div {
+    width: 80%;
+    height: 24%;
+    position: absolute;
+    border-radius: 20px;
+    top: 30%;
+    left: 10%;
+    background-color: #666666;
+    opacity: 0.8999;
+}
+
+.mui-input-group {
+    /* margin:0 1% 0 1%; */
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: scroll;
+}
+
+.content {
+    position: absolute;
+    top: 54px;
+    width: 95%;
+    bottom: 54px;
+    left: 2.5%;
+    overflow: scroll;
+}
+
+.disabledInput {
+    background: #e2e2e2;
+}
+
+/* 以下类放于组件中均无效，不得已只能提取出来了 */
+
+.mui-input-row .mui-input-clear~.mui-icon-clear {
+    top: 15px !important;
+    color: lightblue !important;
+}
+
+/* 解决由于监听touchstart和touchmove时passtive为改为true，导致e.preventDefault()进而点击header中的返回时错误的提示,web端会有提示，手机端不会有提示 */
+
+/* Unable to preventDefault inside passive event listener due to target being treated as passive */
+
+header {
+    touch-action: none;
+}
